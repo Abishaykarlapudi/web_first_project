@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-qidth,intil-scale=1.0">
+    <title>JavaScript Tutorial</title>
+
+    <head>
+        <link rel="stylesheet" href="home4545.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W3Schools Online Web Tutorials</title>
+        <link rel="icon" href="tech.jpg">
+        <link rel="stylesheet" href="css_page.css">
+        <script>
+            // Function to load content into a div
+            function loadContent(url, targetDiv) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById(targetDiv).innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="header-left">
+                <a href="#" class="menu-btn">
+                    <div class="w3">
+                        <img src="tech.jpg">
+                    </div>
+                </a>
+                <div href="#" class="menu-btn" id="Tutorial">
+                    <div>
+                        Tutorial
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div href="#" class="menu-btn" id="referance">
+                    Referances
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#" class="menu-btn" id="exercises">
+                    Exercises
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#" class="menu-btn" id="video-btn">
+                    video
+                </div>
+                <!--mobile view-->
+                <div class="menu-btn" id="menu-btn">
+                    Menu
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="togglelightdark btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </div>
+                <div class="toggletranslate btn">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="togglesearch btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="#upgrade" class="btn btn-link bg-blank" id="upgrade-btn">
+                    Upgrade
+                </a>
+                <a href="#getcertified" class="btn btn-link bg-pink" id="getcertified">
+                    Get certified
+                </a>
+                <a href="#free website" class="btn btn-link bg-yellow" id="freewebsite">
+                    Free Website
+                </a>
+                <a href="login..html" class="btn btn-link bg-green" id="login">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu-container" id="mobile-menu-nav">
+        <div class="mobile-menu-close">
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+            <a href="#" class="menu-btn-mobile">
+                Tutorial
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Referances
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Upgrade
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                video
+            </a>
+        </ul>
+    </div>
+    <div class="ang">
+        <div class="space">
+            <a href="html_page.html" calss="a">HTML</a>
+        </div>
+        <div class="space">
+            <a href="css_page.html" calss="a">CSS</a>
+        </div>
+        <div class="space">
+            <a href="" calss="a">JAVASCRIPT</a>
+        </div>
+    </div>
+    <div>
+        <div class="main">
+            <div class="t">
+                <a>
+                    JAVASCRIPT TUTROIALS
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('js_home.html', 'contentDiv')">
+                    JAVASCRIPT HOME
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('js_intro.html', 'contentDiv')">
+                    JAVASCRIPT INTRODUCTION
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('js_syn.html', 'contentDiv')">
+                    JAVASCRIPT SYNTAX
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('js_sel.html', 'contentDiv')">
+                    JAVASCRIPT SELECTORS
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('js_how.html', 'contentDiv')">
+                    JAVASCRIPT HOW TO
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT COMMENTS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT COLORS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT BACKGROUNDS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT BORDERS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT MARGINS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT PADDING
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT HEIGHT/WIDTH
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT BOX MODEL
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT OUTLINE
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT TEXT
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT FONTS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT ICONS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT LINKS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT TABLES
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT DISPLAY
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT MAX-WIDTH
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT PosITION
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    JAVASCRIPT Z-INDEX
+                </a>
+            </div>
+            <div class="t"> 
+                <a>
+                    JAVASCRIPT OVERFLOW
+                </a>
+            </div>
+        </div>
+        <div class="display" id="contentDiv">
+            <center>
+                <img src="tech.jpg" class="img"><br>
+            <b class="to">Welcome to tech learn</b><br>
+            <b class="to">JAVASCRIPT TUTORIALS</b>
+        </center>
+        </div>
+    </div>
+</body>
+
+</html>

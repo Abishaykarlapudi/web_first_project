@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Home Page</title>
+  <style>
+    /* Add your CSS styles here */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Login form -->
+  <div id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Home page content -->
+  <div id="homePage" class="hidden">
+    <h2>Welcome to the Home Page!</h2>
+    <!-- Add your home page content here -->
+    <p>This is the content of the home page.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    // JavaScript code
+    const loginPage = document.getElementById('loginPage');
+    const homePage = document.getElementById('homePage');
+    const loginForm = document.getElementById('loginForm');
+
+    // Check if user is logged in (for demo purposes, you may use your authentication mechanism)
+    let isLoggedIn = false;
+
+    // Function to handle login submission
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Replace this condition with your actual authentication logic
+      if (username === 'user' && password === 'password') {
+        isLoggedIn = true;
+        showHomePage();
+      } else {
+        alert('Invalid credentials. Please try again.');
+      }
+    });
+
+    // Function to display the home page after successful login
+    function showHomePage() {
+      if (isLoggedIn) {
+        loginPage.classList.add('hidden');
+        homePage.classList.remove('hidden');
+      }
+    }
+
+    // Function to logout
+    function logout() {
+      isLoggedIn = false;
+      homePage.classList.add('hidden');
+      loginPage.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

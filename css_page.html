@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-qidth,intil-scale=1.0">
+    <title>CSS TUTORIAL</title>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W3Schools Online Web Tutorials</title>
+        <link rel="icon" href="tech.jpg">
+        <link rel="stylesheet" href="css_page.css">
+        <script>
+            // Function to load content into a div
+            function loadContent(url, targetDiv) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById(targetDiv).innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="header-left">
+                <a href="#" class="menu-btn">
+                    <div class="w3">
+                        <img src="tech.jpg">
+                    </div>
+                </a>
+                <div href="#" class="menu-btn" id="Tutorial">
+                    <div>
+                        Tutorial
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div href="#" class="menu-btn" id="referance">
+                    Referances
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#" class="menu-btn" id="exercises">
+                    Exercises
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#" class="menu-btn" id="video-btn">
+                    video
+                </div>
+                <!--mobile view-->
+                <div class="menu-btn" id="menu-btn">
+                    Menu
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="togglelightdark btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </div>
+                <div class="toggletranslate btn">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="togglesearch btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="#upgrade" class="btn btn-link bg-blank" id="upgrade-btn">
+                    Upgrade
+                </a>
+                <a href="#getcertified" class="btn btn-link bg-pink" id="getcertified">
+                    Get certified
+                </a>
+                <a href="#free website" class="btn btn-link bg-yellow" id="freewebsite">
+                    Free Website
+                </a>
+                <a href="login..html" class="btn btn-link bg-green" id="login">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu-container" id="mobile-menu-nav">
+        <div class="mobile-menu-close">
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+            <a href="#" class="menu-btn-mobile">
+                Tutorial
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Referances
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                Upgrade
+            </a>
+            <a href="#" class="menu-btn-mobile">
+                video
+            </a>
+        </ul>
+    </div>
+    <div class="ang">
+        <div class="space">
+            <a href="html_page.html" calss="a">HTML</a>
+        </div>
+        <div class="space">
+            <a href="css_page.html" calss="a">CSS</a>
+        </div>
+        <div class="space">
+            <a href="js_page.html" calss="a">JAVASCRIPT</a>
+        </div>
+    </div>
+    <div class="all">
+        <div class="main">
+            <div class="t">
+                <a>
+                    CSS TUTROIALS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS HOME
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('css_int.html', 'contentDiv')">
+                    CSS INTRODUCTION
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('css_index.html', 'contentDiv')">
+                    CSS SYNTAX
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('css_sel.html', 'contentDiv')">
+                    CSS SELECTORS
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('css_how.html', 'contentDiv')">
+                    CSS HOW TO
+                </a>
+            </div>
+            <div class="t">
+                <a class="table" onclick="loadContent('css_com.html', 'contentDiv')">
+                    CSS COMMENTS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS COLORS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS BACKGROUNDS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS BORDERS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS MARGINS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS PADDING
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS HEIGHT/WIDTH
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS BOX MODEL
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS OUTLINE
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS TEXT
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS FONTS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS ICONS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS LINKS
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS TABLES
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS DISPLAY
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS MAX-WIDTH
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS PosITION
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS Z-INDEX
+                </a>
+            </div>
+            <div class="t">
+                <a>
+                    CSS OVERFLOW
+                </a>
+            </div>
+        </div>
+        <div class="display" id="contentDiv"> 
+            <center>
+            <img src="tech.jpg" class="img"><br>
+        
+            <b class="to">Welcome to tech learn</b><br>
+            <b class="to">CSS TUTORIALS</b>
+        </center>
+        </div>
+    </div>
+    <!-- <frameset row="10%,*">
+        
+        <frame src="ang.html"></frame>
+        <frameset cols="15%,*">
+            <frame src=""></frame>
+            <frame src="" name="display"></frame>
+        </frameset>
+    </frameset> -->
+</body>
+
+</html>
